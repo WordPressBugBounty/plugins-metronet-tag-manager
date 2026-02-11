@@ -1,12 +1,12 @@
 === Metronet Tag Manager ===
-Contributors: ronalfy, ruskinconsulting
+Contributors: leonhitchens, ruskinconsulting
 Tags: google, google tag manager, tag manager
 Requires at least: 3.9
-Tested up to: 6.3.1
+Tested up to: 6.9
 Stable tag: 1.5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://mediaron.com/contribute/
+Donate link: https://wpmetronet.com/contribute/
 
 Integrate Google Tag Manager into your website.
 
@@ -36,13 +36,13 @@ Please let us know if you have any feature requests or issues with this plugin.
 Below are a couple of resources you might find valuable if you are new to Google Tag Manager
 
 Official Google Tag Manager website
-https://developers.google.com/tag-manager/
+<a href="https://developers.google.com/tag-manager/">https://developers.google.com/tag-manager/</a>
 
 Tracking Google Analytics Events with Google Tag Manager
-http://moz.com/ugc/tracking-google-analytics-events-with-google-tag-manager
+<a href="https://wpmetronet.com/how-to-track-pdf-downloads-with-tag-manager-on-wordpress/">https://wpmetronet.com/how-to-track-pdf-downloads-with-tag-manager-on-wordpress/</a>
 
 Make Analytics Better with Tag Management and a Data Layer
-http://cutroni.com/blog/2012/05/14/make-analytics-better-with-tag-management-and-a-data-layer/
+<a href="https://wpmetronet.com/the-benefits-of-using-a-tag-manager-plugin-on-wordpress/">https://wpmetronet.com/the-benefits-of-using-a-tag-manager-plugin-on-wordpress/</a>
 
 == Installation ==
 
@@ -71,7 +71,7 @@ The data layer is an object that contains the information that you want to pass 
 
 = Can I have dynamic values? =
 
-Yes. For custom values, <a href="https://github.com/ronalfy/metronet-tag-manager#filtering-variables">please see the filters section on GitHub</a>.
+Yes. For custom values, <a href="https://github.com/WPMetronet/metronet-tag-manager#filtering-variables">please see the filters section on GitHub</a>.
 
 == Screenshots ==
 
