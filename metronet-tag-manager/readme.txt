@@ -1,48 +1,48 @@
 === Metronet Tag Manager ===
-Contributors: leonhitchens, ruskinconsulting
+Contributors: ronalfy, pereirinha
 Tags: google, google tag manager, tag manager
 Requires at least: 3.9
-Tested up to: 6.9
-Stable tag: 1.5.5
+Tested up to: 7.0
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://wpmetronet.com/contribute/
+Donate link: https://mediaron.com/contribute/
 
-Integrate Google Tag Manager into your website.
+Integrate Google Tag Manager into  your website.
 
 == Description ==
 
 Integrate Google Tag Manager into your website.
 
-The great thing about Google Tag Manager (GTM) is that you are able to gather most of your tracking scripts in one place. You can then fire these scripts whenever you want, specified by the rules you set up. This sounds great, right? Well, it is.  The only problem is that sometimes it takes some time to set these rules up. This implementation can either set a dataLayer variable in the dataLayer before the tag manager script is loaded or push an HTML event handler with the variable "event" to the dataLayer when a button is clicked. The problem is that this isn’t always that easy to do when you don’t have the ability/access to add the code to your site.
+The great thing about Google Tag Manager (GTM) is that you are able to gather most of your tracking scripts in one place. You can then fire these scripts whenever you want, specified by the rules you set up. This sounds great, right? Well it is.  The only problem is that sometimes it takes a bit of implementing to set these rules up. This implementation can either be setting a dataLayer variable in the dataLayer before the tag manager script is loaded, or pushing a HTML event handler with the variable "event" to the dataLayer when a button is clicked. The problem is that this isn’t always that easy to do when you don’t have the ability/access to add the code to your site.
 
-This is where the Metronet Tag Manager plugin shines. It unlocks the power of the dataLayer so you can easily set macros and firing rules on almost any element.
+This is where the Metronet Tag Manager plugin shines. It really unlocks the power of the dataLayer so you can easily set macros and firing rules on almost any element.
 
 This plugin lets you:
 <ul>
-<li>Easily add as many dataLayer variables per-post and per-page basis as needed.</li>
-<li>The plugin already gives you six predefined dataLayer variables you can change/remove or test the system with. These will be loaded on all pages and posts.</li>
-<li>Set up separate dataLayer variables for pages that aren’t posts or pages (like archives, etc).</li>
-<li>Lets you easily add an HTML event handler to any content link with the GTM TinyMCE button in the WYSIWYG.</li>
-<li>Lets you add your unique ID or a class to each content link with the GTM TinyMCE button in the WYSIWYG.</li>
+<li>Easily add as many dataLayer variables on a per-post and per-page basis as you need.</li>
+<li>The plugin already gives you six predefined dataLayer variables that you can change/remove or test the system with. These will be loaded on all pages and posts.</li>
+<li>Set up separate dataLayer variables for pages that aren’t posts or pages (like archives etc).</li>
+<li>Lets you easily add a HTML event handler to any content link with the GTM TinyMCE  button in the WYSIWYG.</li>
+<li>Lets you add your own unique ID or a class to each content link with the GTM TinyMCE button in the WYSIWYG.</li>
 </ul>
 
-Please note that for this plugin to work, a slight customization is needed. WordPress doesn’t let you load scripts straight after the opening <body> tag, where the GTM script needs to be placed to work correctly. To fix this, you need to add `<?php do_action( 'body_open' ); ?>` just after the `<body>` tag, and that’s it.
+Please note that for this plugin to work there is a slight customization that is needed. WordPress doesn’t let you load scripts straight after the opening <body> tag which is where the GTM script needs to be placed to work correctly. To fix this you need to add `<?php do_action( 'body_open' ); ?>` just after the `<body>` tag and that’s it.
 
-> Note, If you are using WordPress 5.2. and up, contact your theme developer and ask them to insert `<?php wp_body_open(); ?>` just after the opening body tag of their theme. Here is some code to <a href="https://gist.github.com/ronalfy/6b7f43e70e644320aba67d1876a0aeff">show the theme developer to make it compatible with Metronet Tag Manager</a>.
+> Note, if you are using WordPress 5.2. and up, contact your theme developer and ask them to insert `<?php wp_body_open(); ?>` just after the opening body tag of their theme. Here is some code to <a href="https://gist.github.com/ronalfy/6b7f43e70e644320aba67d1876a0aeff">show the theme developer to make it compatible with Metronet Tag Manager</a>.
 
-Please let us know if you have any feature requests or issues with this plugin.
+Please let us know if you have any feature requests or if you have any issues with this plugin.
 
 Below are a couple of resources you might find valuable if you are new to Google Tag Manager
 
 Official Google Tag Manager website
-<a href="https://developers.google.com/tag-manager/">https://developers.google.com/tag-manager/</a>
+https://developers.google.com/tag-manager/
 
 Tracking Google Analytics Events with Google Tag Manager
-<a href="https://wpmetronet.com/how-to-track-pdf-downloads-with-tag-manager-on-wordpress/">https://wpmetronet.com/how-to-track-pdf-downloads-with-tag-manager-on-wordpress/</a>
+http://moz.com/ugc/tracking-google-analytics-events-with-google-tag-manager
 
 Make Analytics Better with Tag Management and a Data Layer
-<a href="https://wpmetronet.com/the-benefits-of-using-a-tag-manager-plugin-on-wordpress/">https://wpmetronet.com/the-benefits-of-using-a-tag-manager-plugin-on-wordpress/</a>
+http://cutroni.com/blog/2012/05/14/make-analytics-better-with-tag-management-and-a-data-layer/
 
 == Installation ==
 
@@ -67,11 +67,11 @@ Please refer to the <a href="https://developers.google.com/tag-manager/reference
 
 = What are dataLayer variables used for? =
 
-The data layer is an object that contains the information that you want to pass to Google Tag Manager. By setting up rules in Google Tag Manager, these variables can then be used to include the correct snippets or scripts – for example, when a certain button is clicked.
+The data layer is an object that contains the information that you want to pass to Google Tag Manager. By setting up rules in Google Tag Manager, these variables can then be used to include the correct snippets or scripts – for example when a certain button is clicked.
 
 = Can I have dynamic values? =
 
-Yes. For custom values, <a href="https://github.com/WPMetronet/metronet-tag-manager#filtering-variables">please see the filters section on GitHub</a>.
+Yes. For custom values, <a href="https://github.com/ronalfy/metronet-tag-manager#filtering-variables">please see the filters section on GitHub</a>.
 
 == Screenshots ==
 
@@ -82,9 +82,23 @@ Yes. For custom values, <a href="https://github.com/WPMetronet/metronet-tag-mana
 
 == Changelog ==
 
+= 1.6.0 =
+* Released 2026-04-24
+* Tested up to WordPress 7.0.
+* Fixed plugin URI pointing to wrong plugin slug (was metronet-profile-picture, now metronet-tag-manager), resolving false-positive security scanner alerts.
+* Added GTM tag output on the WordPress login page — new "Enable on login page" toggle in settings.
+* Fixed %category% and similar placeholders being incorrectly stripped during sanitization; reworked sanitize_value() to preserve any %placeholder% token regardless of surrounding text.
+* Wired up Gutenberg REST API route for reading and saving per-post dataLayer variables (previously register_routes() was empty dead code).
+* WPCS 3.0 compliance: renamed getMessage() to get_message(), replaced curl with wp_remote_get(), added $wpdb->prepare() in uninstall.php.
+* Added five new built-in dataLayer variable placeholders: %category% (primary category slug), %tags% (comma-separated tag slugs), %post_id% (numeric post ID), %permalink% (canonical URL), %language% (site locale via get_locale()).
+* Added Google Consent Mode v2 support: configurable default consent states (analytics_storage, ad_storage, ad_user_data, ad_personalization, functionality_storage, personalization_storage, security_storage) output as a gtag() call before the GTM snippet.
+* Added Settings Import/Export: export all plugin settings as a JSON file and re-import them on another site via the admin UI.
+* Added Conditional Tag Loading: new checkboxes to exclude GTM from logged-in users and/or mobile devices (uses wp_is_mobile()).
+* Added standalone Gutenberg block metronettagmanager/datalayer-push — insert a button anywhere in the block editor; configure the event name, key, and value in the block inspector; renders a frontend button that fires dataLayer.push() on click.
+
 = 1.5.5 =
 * Released 2023-06-24
-* Adding the ability to update header messages remotely.
+* Adding ability to update header message remotely.
 
 = 1.5.4 =
 * Released 2019-07-16
@@ -173,6 +187,9 @@ Yes. For custom values, <a href="https://github.com/WPMetronet/metronet-tag-mana
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+Major release tested up to WordPress 7.0. New built-in placeholders, Google Consent Mode v2, settings import/export, conditional tag loading, login page support, and a standalone Gutenberg dataLayer push block. Recommended for all users.
 
 = 1.5.5 =
 Compatible with Wordpress 6.1.1
